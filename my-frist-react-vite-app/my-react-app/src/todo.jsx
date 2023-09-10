@@ -1,4 +1,4 @@
-export default function lisItame({ task }) {
+export default function LisItame({ task }) {
     return (
         <li>Learn : {task} </li>
     )
