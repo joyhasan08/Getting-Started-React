@@ -1,6 +1,6 @@
 const user = {
-    name: 'Hedy Lamarr',
-    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+    name: 'Joy Hasan',
+    imageUrl: 'https://avatars.githubusercontent.com/u/61209700?s=400&u=a46f974ba6d4a187559e0ec1ffbbcce1677144f5&v=4',
     imageSize: 100,
   };
   
