@@ -24,20 +24,20 @@ const CountriesData = () => {
 
     return (
         <div className=" mt-4">
-            <section className=" flex gap-2">
-            <div className=" w-1/2">
-                <div className=" ">
-                    <h2 className=" bg-teal-800 text-xl font-semibold p-2">Visited Places</h2>
-                    <ul className=" p-2">
-                        {
-                            bookmark.map((country) => <li key={country.cca3} >  {country.name.common} </li>)
-                        }
-                    </ul>
+            <section className=" flex flex-col md:flex-row gap-2">
+                <div className=" w-full md:w-1/2">
+                    <div className=" ">
+                        <h2 className=" bg-teal-800 text-xl font-semibold p-2">Visited Places</h2>
+                        <ul className=" p-2">
+                            {
+                                bookmark.map((country) => <li key={country.cca3} >  {country.name.common} </li>)
+                            }
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div className="w-1/2">
-                <Bookmark key={bookmark.cca3} bookmark={bookmark}  ></Bookmark>
-            </div>
+                <div className="w-full md:w-1/2">
+                    <Bookmark key={bookmark.cca3} bookmark={bookmark}  ></Bookmark>
+                </div>
             </section>
             <h4 className="text-xl font-medium  my-4">Total Countries: <span className=" text-cyan-400"> {Country.length}</span> </h4>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
