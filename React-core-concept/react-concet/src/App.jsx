@@ -3,6 +3,7 @@ import './App.css'
 import TodoList from './todo'
 import UseHook from './useSateHook'
 import Joy from './userProfile'
+import WatchData from './component/WatchData'
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
       </div>
       <div>
         <UseHook></UseHook>
+      </div>
+      <div>
+        <WatchData></WatchData>
       </div>
 
 
