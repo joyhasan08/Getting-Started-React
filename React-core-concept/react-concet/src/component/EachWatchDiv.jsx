@@ -11,7 +11,7 @@ const EachWatchDiv = ({ singleWatch }) => {
                     } className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center space-y-4">
-                    <h2 className="card-title text-2xl">{name}</h2>
+                    <h2 className="card-title text-2xl ">{name}</h2>
                     <p>{details}</p>
                     <div className="card-actions">
                         <button className="btn btn-primary">{price}</button>

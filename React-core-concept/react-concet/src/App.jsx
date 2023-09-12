@@ -24,7 +24,7 @@ function App() {
       <div>
         <UseHook></UseHook>
       </div>
-      <div>
+      <div className='  overflow-y-scroll  h-[500px]'>
         <WatchData></WatchData>
       </div>
 
