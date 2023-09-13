@@ -19,7 +19,7 @@ const EachCountry = ({ Conutry , handelBookmark  }) => {
             {/* <h2>Language : {coatOfArms.png}</h2> */}
             {/* <img src={coatOfArms.png} alt="" /> */}
             <h2>Code : {cca3}</h2>
-            <h2>latlng : {latlng} </h2>
+            <h2>latlng : {latlng} </h2> 
             <h2>latlng2 : {latlng[`1`]}</h2>
             <h2 className={addToVisitList && ` bg-yellow-800 p-2 rounded-lg w-fit`} >{addToVisitList && `BookedMark`}</h2>
             <div className=" flex gap-3">
