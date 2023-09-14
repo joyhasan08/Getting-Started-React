@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import DisplayWatche from "./DisplayWatche";
+import EachWatch from "./EachWatch";
+
 
 
 const WatchData = () => {
@@ -8,15 +9,13 @@ const WatchData = () => {
         fetch(`watch.json`)
             .then(res => res.json())
             .then(data => setWatches(data.smartwatches))
-        console.log(watches)
-        console.log(watches);
+        // console.log(watches)
     }, [])
     return (
         <div>
             {
-                watches.map(( watches )=>{
-                    <DisplayWatche WatchData={watches} ></DisplayWatche>
-                })
+                watches.map(( value )=> <EachWatch key={value.price} EachWatch={value} ></EachWatch>
+                )
             }
         </div>
     );
