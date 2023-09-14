@@ -21,11 +21,9 @@ const CountriesData = () => {
         setBookmark(newBookmarked)
 
     }
-
+    
     return (
         <div className=" mt-4">
-
-
             <div className=" w-full max-h-80   overflow-y-scroll">
                 <Bookmark key={bookmark.cca3} bookmark={bookmark}  ></Bookmark>
             </div>
@@ -34,7 +32,6 @@ const CountriesData = () => {
                 {
                     Country.map(CountryData => <EachCountry handelBookmark={handelBookmark} key={Country.cca3} Conutry={CountryData} ></EachCountry>)
                 }
-
             </div>
         </div>
     );

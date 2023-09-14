@@ -13,10 +13,12 @@ const WatchData = () => {
     }, [])
     return (
         <div>
+            <div className=" w-20 h-10">
             {
                 watches.map(( value )=> <EachWatch key={value.price} EachWatch={value} ></EachWatch>
                 )
             }
+            </div>
         </div>
     );
 };
